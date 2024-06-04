@@ -1,0 +1,460 @@
+* {
+	--mi-green: #28807c;
+}
+/* ~~~~~~~~~~~~~~~~~~~
+ * START MAPIFY STYLES
+*/
+.mpfy-controls .mpfy-search-form .mpfy-search-field .mpfy-search-field-queries {
+	overflow: visible !important;
+}
+.mpfy-iti-form-element:focus,
+.mpfy-container *:focus,
+.selecter-selected:focus {
+	outline: 2px solid var(--mi-green) !important;
+	outline-offset: 3px !important;
+}
+.selecter-element {
+	opacity: 1 !important;
+}
+.mpfy-filter label,
+.mpfy-search-field-item label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+#mpfy-iti-submit {
+	position: absolute !important;
+	right: -100px !important;
+	max-width: 160px !important;
+    height: 40px !important;
+	color: white !important;
+    background: var(--mi-green) !important;
+}
+.oos-message {
+	background: gold;
+	padding: 1rem;
+    display: none; /* <-- to display OOS, change value to 'block' */
+}
+.mpfy-p-content *,
+.mpfy-container * {
+	font-family: Montserrat, sans-serif !important;
+}
+.mpfy-mll-l-title {
+	font-weight: 500 !important;
+}
+.mpfy-search-radius {
+	border-radius: 5px !important;
+	min-width: 200px !important;
+}
+.mpfy-controls-wrap {
+	position: static !important;
+}
+.mpfy-reset-search-button {
+	display: none !important;
+}
+.michigan-static-map {
+	height: 400px;
+	width: 100%;
+	background: center/1400px no-repeat;
+}
+.mpfy-search-wrap {
+	flex-direction: row-reverse !important;
+}
+.mpfy-after-search-radius-label {
+	display: none !important;
+}
+.mpfy-controls {
+	justify-content: flex-start;
+	display: flex;
+	margin: 0 0 20px 0 !important;
+}
+.mpfy-controls .mpfy-search-form .mpfy-search-field input[type = 'search'] {
+	width: 100% !important;
+}
+/* Style first item in filter list */
+.selecter-item:nth-child(1) {
+	color: #ccc !important;
+}
+/* Search form vertical bars */
+.mpfy-search-radius-label::after,
+.mpfy-search-radius-label::before,
+.mpfy-search-radius::after,
+.mpfy-after-search-radius-label:before,
+.mpfy-search-radius-label::after,
+.mpfy-search-field-queries:after,
+.mpfy-search-radius-type-wrap:after
+{
+	background-color: var(--mi-green) !important;
+	height: 40px !important;
+	top: 0 !important;
+	margin-top: 0 !important;
+}
+.mpfy-controls .mpfy-search-radius:after {
+	display: none !important;
+}
+.mpfy-or-text {
+	display: none;
+}
+/* Main container for popup */
+.main-container {
+    width: 90%;
+    display: flex;
+    color: #333;
+}
+/* Hide default arrow on get directions */
+.mpfy-p-widget-direction a:after {
+	display: none;
+}
+.mpfy-p-widget-direction a {
+	min-width: 190px !important;
+}
+.mpfy-title h1 {
+	font-size: 2.5rem !important;
+	margin-bottom: 10px
+}
+.column-container a {
+	color: var(--mi-green) !important;
+}
+.column-container {
+    width: 50%;
+    padding: 20px 30px 0 0 !important;
+}
+.column-header {
+    margin-bottom: 0;
+    font-size: 20px !important;
+}
+.station-information {
+	margin-top: 20px !important;
+	font-size: 14px !important;
+}
+.column-container svg {
+	height: 20px;
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+}
+.column-container li {
+	list-style: none;
+}
+.kiosk-details-container {
+	margin-left: 20px !important;
+}
+.kiosk-details-container ul {
+	margin: 10px 20px;
+}
+.bold-text {
+	font-weight: 800;
+}
+.tooltip-payment-options p {
+	font-weight: 700 !important;
+}
+.mpfy-mll-l-buttons {
+	display: flex !important;
+	flex-direction: column;
+	width: 150px;
+	text-align: center;
+}
+.mpfy-p-close {
+	background: url('https://michigansstdev.wpenginepowered.com/wp-content/plugins/mapifypro_d_yearly_master/assets/images/close.png') no-repeat center center !important
+}
+/* Get directions */
+.mpfy-p-widget a {
+	max-width: 200px;
+	background: var(--mi-green) !important;
+	margin: 0 0 30px !important;
+}
+/* Short Description - Search result list */
+.mpfy-mll-l-buttons a,
+.mpfy-mll-pagination a {
+	padding-top: 1px !important;
+	border-radius: 0 !important;
+	margin-top: 10px;
+	background: var(--mi-green) !important;
+	font-weight: 500 !important;
+	color: white;
+	border: none;
+	min-width: 80px;
+	text-align: center;
+}
+.mpfy-mll-l-buttons a:hover,
+.mpfy-mll-pagination a:hover {
+	background: white !important;
+	border: 1px solid var(--mi-green) !important;
+	color: var(--mi-green) !important;
+}
+.mpfy-mll-l-buttons a:hover {
+	color: var(--mi-green) !important;
+	background: white !important;
+	border: 1px solid var(--mi-green) !important;
+}
+/* Hide categories on accordions */
+.mpfy-mll-l-categories {
+	display: none !important;
+}
+.mpfy-mll-l-buttons a:hover {
+	outline: 1px solid #3d7aa9 !important;
+	transition: none !important;
+}
+.mpfy-tooltip span {
+	padding: 22px !important;
+}
+.mpfy-p-content {
+	display: flex;
+	flex-direction: column-reverse;
+}
+.mpfy-p-widget-location {
+	display: none !important;
+}
+.mpfy-p-content {
+	padding-top: 20px !important;
+}
+.mpfy-mll-l-content {
+	width: 100%;
+}
+.mpfy-mll-l-content ul {
+	font-weight: 400 !important;
+	list-style: none;
+	padding: 10px 0 0
+}
+.mpfy-mll-l-content strong {
+    display: none !important;
+}
+.mpfy-mll-l-content p {
+	font-weight: 500 !important;
+	color: #142d3e !important;
+}
+.mpfy-p-widget-location {
+	display: none !important;
+}
+.mpfy-search-field-add-item {
+	display: none !important;
+}
+
+/* Start Tooltip */
+.mpfy-tooltip {
+	min-width: 300px !important;
+}
+.mpfy-tooltip-content * {
+	font-family: 'Montserrat', sans-serif !important;
+}
+.mpfy-tooltip-content strong {
+	font-weight: 800 !important;
+	color: black !important;
+}
+.mpfy-tooltip-content h3 {
+	font-size: 16px;
+	padding: 0 20px 0;
+	margin: 10px 0 0;
+}
+.mpfy-tooptip-actions a span {
+	display: none !important;
+}
+.mpfy-tooltip ul {
+	list-style: none;
+	padding-left: 20px;
+}
+.column-container li,
+.mpfy-tooltip li,
+.mpfy-tooltip p,
+.tooltip-address,
+.mpfy-mll-l-content li, 
+/* Short description hours */
+.mpfy-mll-l-content td {
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	color: black !important;
+}
+.tooltip-hours-container {
+	margin-top: 20px;
+}
+.tooltip-payment-options h3 {
+	margin-top: 0;
+}
+.mpfy-tooptip-actions a {
+	background: var(--mi-green) !important;
+	color: white !important;
+}
+.mpfy-tooltip .mpfy-tooptip-actions {
+	display: none;
+ }
+/* End Tooltip */
+@media only screen and (max-width: 768px) {
+    .mpfy-controls-wrap {
+		margin-bottom: 60px !important;
+	}
+	.mpfy-controls form,
+	.mpfy-controls  .mpfy-filter {
+		max-width: 100% !important;
+	}
+	.mpfy-tooltip .mpfy-tooptip-actions {
+	    display: block;
+    }
+	.mpfy-search-wrap {
+	flex-direction: column-reverse !important;
+	}
+	.mpfy-search-field {
+		border-bottom: 2px solid var(--mi-green);
+		border-right: none !important;
+		width: 100% !important;
+	}
+	.main-container {
+	    flex-direction: column;
+    }
+    .mpfy-title h1 {
+        font-weight: 800 !important;
+        color: black !important;
+        font-size: 2.5rem !important;
+    }
+    .kiosk-details-container {
+        margin-left: 0 !important;
+	}
+	.mpfy-search-field-queries::after {
+		display: none !important;
+	}
+	.column-container {
+		width: 100%;
+	}
+	#mpfy-iti-submit {
+		right: 0 !important;
+		top: 160px !important;
+		z-index: 100 !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		height: 50px !important;
+	}
+}
+/* END MAPIFY STYLES
+ * ~~~~~~~~~~~~~~~~~
+*/
+
+/* Start MI specific styles
+* ~~~~~~~~~~~~~~~~~
+*/
+.mpfy-controls form,
+.mpfy-search-radius,
+.selecter-selected,
+.mpfy-search-radius-label {
+	background: white !important;
+	font-family: Montserrat, sans-serif !important;
+	color: black !important;
+}
+form * {
+	font-size: 16px !important;
+}
+.mpfy-controls form *,
+.mpfy-search-field-item ::placeholder{
+	color: black !important
+}
+.mpfy-controls {
+	border: solid var(--mi-green) 2px !important;
+	max-width: 560px;
+}
+/* Arrows on form filters */
+.selecter-selected::after {
+	border-color: black transparent !important;
+}
+.mpfy-controls .mpfy-search-form .mpfy-search-button {
+	background: url('https://michigansstdev.wpenginepowered.com/wp-content/uploads/2024/03/search-icon-dark.png') no-repeat 0 0 !important;
+	background-position: center center !important;
+	background-color: transparent !important;
+	background-size: 18px !important;
+}
+.mpfy-filter {
+	border-left: 2px solid var(--mi-green) !important;
+	background: none !important;
+	border-radius: 0 !important;
+}
+.mpfy-controls .mpfy-filter .selecter {
+	border: none !important;
+	border-radius: 0 !important;
+}
+.mpfy-filter .selecter-selected {
+	padding-top: 13px !important;
+}
+.mpfy-mll-location .mpfy-mll-l-heading::after {
+	background: url('https://michigansstdev.wpenginepowered.com/wp-content/plugins/mapifypro_d_yearly_master/assets/images/arrow-up-black.png') no-repeat;
+  	content: '';
+	background-size: contain;
+	height: 2rem;
+	width: 2rem;
+	float: right;
+	position: relative;
+	top: -20px;
+	right: 20px;
+	transition: transform .3s ease;
+}
+.active .mpfy-mll-l-heading::after {
+	transform: rotate(180deg);
+	position: relative;
+	top: -20px;
+}
+.mpfy-mll-location .mpfy-mll-l-heading {
+	overflow: visible !important;
+}
+.mpfy-mll-location:hover {
+	outline: 2px solid var(--mi-green) !important;
+	outline-offset: -5px;
+}
+.mpfy-search-button {
+    display: none !important;
+}
+.mpfy-mll-l-heading {
+	padding: 18px !important;
+}
+.mpfy-search-field-queries :after {
+  	content: '';
+	background: url('https://michigansstdev.wpenginepowered.com/wp-content/uploads/2024/03/search-icon-dark.png');
+	background-size: contain;
+	height: 2rem;
+	width: 2rem;
+	opacity: 0.25;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	transition: opacity .3s ease;
+}
+.show-query-fields ::after {
+	opacity: 0;
+}
+.mpfy-controls .mpfy-filter .selecter .selecter-options,
+.mpfy-selecter-wrap .selecter .selecter-options {
+	z-index: 1 !important;
+}
+.mpfy-mll-l-title span {
+	padding-bottom: 0 !important;
+}
+@media (max-width: 768px) {
+	.mpfy-controls {
+		flex-direction: column;
+	}
+	.mpfy-filter.mpfy-selecter-wrap {
+		border-top: 2px solid var(--mi-green) !important;
+		border-left: 0 !important;
+	}
+	.mpfy-controls .mpfy-filter {
+		height: 52px !important;
+	}
+	.mpfy-filter .selecter-selected {
+		padding-top: 0 !important;
+	}
+	.active .mpfy-mll-l-heading::after {
+		top: -20px;
+	}
+	.mpfy-mll-location .mpfy-mll-l-heading::after {
+		bottom: 30px
+	}
+	.mpfy-search-radius-label::after {
+		height: 100% !important;
+	}
+}
+.tooltip-address {
+	color: black !important;
+}
+.mpfy-tooltip-content {
+text-align: left !important;
+}
